@@ -1,0 +1,17 @@
+#!/bin/sh
+
+FILE_DIR=~/.swinit/
+XINITRC_PATH=/etc/X11/xinit/xinitrc
+
+if [ ! -d $FILE_DIR ] ; then
+	echo "FILE_DIR doesn't exist, creating..."
+	mkdir $FILE_DIR
+elif [ ! -f "$FILE_DIR$1" ] ; then
+	echo "DEBUG: ARG: " $FILE_DIR$1
+	echo "Argument does not exist in FILE_DIR, exiting..."
+	exit 1
+else 
+	cp $FILE_DIR$1 $XINITRC_PATH
+	echo "Copied" $1 "to" $XINITRC_PATH
+	exit 0
+fi

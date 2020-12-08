@@ -1,2 +1,8 @@
 # hakr-skriptz
-A bunch of simple shell scripts I wrote to save 2 seconds of typing
+The 2 second time saver
+
+## backhome
+backups your home folder using a crontab and rsync
+
+## swinit
+switches your xinitrc (really broken, use direct path to .swinit folder)
