@@ -1,4 +1,7 @@
 #!/bin/sh
 
 HOME_FOLDER=~/
+REMOTE_FOLDER=server@10.0.0.0:/location
 
+notify-send "rsync backup started"
+rsync -a --delete --quiet --exclude '.Xauthority' $HOME_FOLDER $REMOTE_FOLDER
