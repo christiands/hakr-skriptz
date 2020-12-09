@@ -21,3 +21,6 @@ execute as root or sudo  (ex: sudo swinit dwm)
 enjoy the 5 second time conservation  
   
 oh yeah to make a new xinitrc for swinit, just put a new file (if you add an extension you need to put it as part of the argument), fill it with goodness, and execute it as an argument  
+
+# Contributing
+If someone can help my lazy ass make some nicer documentation I would be eternally grateful
